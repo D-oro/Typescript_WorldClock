@@ -1,5 +1,5 @@
 # This is a world clock. Wowza!
-![Screenshot of world clock](./clock.png "World Clock")
+![Screenshot of world clock](./clock.png)
 
 ### note to future self 
 learned this from:
