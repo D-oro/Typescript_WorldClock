@@ -148,15 +148,17 @@ const minusOne = date.toLocaleTimeString('en-GB', {
 })
 
 ReactDOM.render(
-<div>Hello Woooorld. In Glasgow the time is {GMT}.
+<div>
+    <h2>Hello World!</h2> 
+    <p>In Glasgow the time is {GMT}.</p>
     <p>Check out some other places around the world:</p>
-    <p></p>
+
     <h1>World Clock</h1>
 
     <table>
         <tr>
         <th>Location</th>
-        <th>-</th>
+        <th> </th>
         <th>Time</th>
         </tr>
         <tr>
@@ -281,62 +283,6 @@ ReactDOM.render(
         </tr>
 
     </table>
-
-    {/* <table>
-        <tr>
-            <th>Scotland, Glasgow 0</th>
-            <th>Algeria, Algiers +1</th>
-            <th>Malawi, Lilongwe +2</th>
-            <th>Kenya, Nairobi +3</th>
-            <th>Georgia, Tbilisi +4</th>
-            <th>Pakistan, Islamabad +5</th>
-            <th>Kazakhstan, Astana +6</th>
-            <th>Vietnam, Hanoi +7</th>
-            <th>Malaysia, Kuala Lumpur +8</th>
-            <th>Japan, Tokyo, 9+</th>
-            <th>Papua New Guinea, Port Moresby +10</th>
-            <th>Micronesia, Palikir, +11</th>
-            <th>Fiji, Suva +12</th>
-            <th>New Zealand, Wellington -11</th>
-            <th>Cook Islands, Rarotonga -10</th>
-            <th>US, Anchorage -9 </th>
-            <th>US, San Francisco -8</th>
-            <th>Canada, Inuvik -7</th>
-            <th>Mexico, Mexico City -6</th>
-            <th>Canada, Ottawa -5</th>
-            <th>Puerto Rico, San Juan -4</th>
-            <th>Uruguat, Montevideo -3</th>
-            <th>Sandwich Islands, King Edward Point -2</th>
-            <th>Cado Verde, Praia -1</th>
-        </tr>
-        <tr>
-            <td>{hour}:{twoDigitMinute}</td>
-            <td>{hour+1}:{twoDigitMinute}</td>
-            <td>{hour+2}:{twoDigitMinute}</td>
-            <td>{hour+3}:{twoDigitMinute}</td>
-            <td>{hour+4}:{twoDigitMinute}</td>
-            <td>{hour+5}:{twoDigitMinute}</td>
-            <td>{hour+6}:{twoDigitMinute}</td>
-            <td>{hour+7}:{twoDigitMinute}</td>
-            <td>{hour+8}:{twoDigitMinute}</td>
-            <td>{hour+9}:{twoDigitMinute}</td>
-            <td>{hour+10}:{twoDigitMinute}</td>
-            <td>{hour+11}:{twoDigitMinute}</td>
-            <td>{hour+12}:{twoDigitMinute}</td>
-
-            <td>{hour-11}:{twoDigitMinute}</td>
-            <td>{hour-10}:{twoDigitMinute}</td>
-            <td>{hour-9}:{twoDigitMinute}</td>
-            <td>{hour-8}:{twoDigitMinute}</td>
-            <td>{hour-7}:{twoDigitMinute}</td>
-            <td>{hour-6}:{twoDigitMinute}</td>
-            <td>{hour-5}:{twoDigitMinute}</td>
-            <td>{hour-4}:{twoDigitMinute}</td>
-            <td>{hour-3}:{twoDigitMinute}</td>
-            <td>{hour-2}:{twoDigitMinute}</td>
-            <td>{hour-1}:{twoDigitMinute}</td>
-        </tr>
-    </table> */}
 
 </div>, document.getElementById('root'))
 
