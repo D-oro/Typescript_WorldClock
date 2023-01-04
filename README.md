@@ -1,9 +1,11 @@
-# This is a world clock. Wowza!
+## This is a world clock. Wowza!
 ![Screenshot of world clock](./clock.png)
 
 ### note to future self 
-learned this from:
+learned how to use TypeScript with react from:
 - https://www.youtube.com/watch?v=G48m82q5nxQ&ab_channel=MBJourney 
+
+it's not the most recent approach, but it worked for a first TS project. 
 
 ### process
 - start with empty folder and open it in VsCode
