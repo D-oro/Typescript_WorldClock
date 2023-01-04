@@ -3,149 +3,153 @@ import ReactDOM from 'react-dom';
 
 const date = new Date()
 
-const GMT = date.toLocaleTimeString('en-GB', {
+const GMT: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'GMT+0',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusOne = date.toLocaleTimeString('en-GB', {
+const plusOne: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-1',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusTwo = date.toLocaleTimeString('en-GB', {
+const plusTwo: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-2',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusThree = date.toLocaleTimeString('en-GB', {
+const plusThree: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-3',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusFour = date.toLocaleTimeString('en-GB', {
+const plusFour: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-4',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusFive = date.toLocaleTimeString('en-GB', {
+const plusFive: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-5',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusSix = date.toLocaleTimeString('en-GB', {
+const plusSix: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-6',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusSeven = date.toLocaleTimeString('en-GB', {
+const plusSeven: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-7',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusEight = date.toLocaleTimeString('en-GB', {
+const plusEight: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-8',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusNine = date.toLocaleTimeString('en-GB', {
+const plusNine: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-9',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusTen = date.toLocaleTimeString('en-GB', {
+const plusTen: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-10',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusEleven = date.toLocaleTimeString('en-GB', {
+const plusEleven: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT-11',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const plusTwelve = date.toLocaleTimeString('en-GB', {
+const plusTwelve: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+12',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusEleven = date.toLocaleTimeString('en-GB', {
+const minusEleven: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+11',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusTen = date.toLocaleTimeString('en-GB', {
+const minusTen: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+10',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusNine = date.toLocaleTimeString('en-GB', {
+const minusNine: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+9',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusEight = date.toLocaleTimeString('en-GB', {
+const minusEight: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+8',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusSeven = date.toLocaleTimeString('en-GB', {
+const minusSeven: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+7',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusSix = date.toLocaleTimeString('en-GB', {
+const minusSix: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+6',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusFive = date.toLocaleTimeString('en-GB', {
+const minusFive: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+5',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusFour = date.toLocaleTimeString('en-GB', {
+const minusFour: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+4',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusThree = date.toLocaleTimeString('en-GB', {
+const minusThree: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+3',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusTwo = date.toLocaleTimeString('en-GB', {
+const minusTwo: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+2',
     hour:'2-digit', 
     minute:'2-digit'
 })
 
-const minusOne = date.toLocaleTimeString('en-GB', {
+const minusOne: string = date.toLocaleTimeString('en-GB', {
     timeZone: 'Etc/GMT+1',
     hour:'2-digit', 
     minute:'2-digit'
 })
+
+const reload = () => {
+    window.location.reload();
+}
 
 ReactDOM.render(
 <div>
@@ -154,7 +158,9 @@ ReactDOM.render(
     <p>Check out some other places around the world:</p>
 
     <h1>World Clock</h1>
-
+    <p>
+    <button onClick={reload}>Get current time</button>
+    </p>
     <table>
         <tr>
         <th>Location</th>
