@@ -1,4 +1,5 @@
 ## This is a world clock. Wowza!
+Here's what it looks like: 
 ![Screenshot of world clock](./clock.png)
 
 ### note to future self 
